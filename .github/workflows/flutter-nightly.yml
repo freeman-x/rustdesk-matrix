@@ -1,5 +1,13 @@
 name: Flutter Nightly Build
 
+# ==========新增开始==========
+env:
+  RENDEZVOUS_SERVER: ${{ secrets.RENDEZVOUS_SERVER }}
+  RELAY_SERVER: ${{ secrets.RELAY_SERVER }}
+  RS_PUB_KEY: ${{ secrets.RS_PUB_KEY }}
+  API_URL: ${{ secrets.API_URL }}
+# ==========新增结束==========
+
 on:
   schedule:
     # schedule build every night
